@@ -505,10 +505,10 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "h7_breakout_0_1",
+      "plot": "h7_breakout_0_2",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "h7_breakout.step",
       "svg": "",
       "vrml": ""
     },
@@ -613,6 +613,12 @@
           "group_by": false,
           "label": "KLC_S4.1",
           "name": "KLC_S4.1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet2",
+          "name": "Datasheet2",
           "show": false
         }
       ],
