@@ -1,6 +1,6 @@
 # pyControl H7 Breakout
 
-> This is a work in progress. Please see the discussion at https://github.com/orgs/pyControl/discussions/171#discussion-9756734
+> This is a work in progress. Please see the [discussion](https://github.com/orgs/pyControl/discussions/171) to see updates and provide feedback.
 
 A pyControl breakout board using an [STM32H743VIT6](https://www.digikey.com/short/7n8h83wr) microcontroller.
 
