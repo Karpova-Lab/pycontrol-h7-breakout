@@ -6,8 +6,8 @@
 	(paper "A3" portrait)
 	(title_block
 		(title "pyControl H7 Breakout")
-		(date "2026-03-12")
-		(rev "0.2")
+		(date "2026-03-26")
+		(rev "0.3")
 	)
 	(lib_symbols
 		(symbol "Connector:Conn_01x06_Pin"
@@ -5130,7 +5130,7 @@
 				(pin bidirectional line
 					(at 27.94 -48.26 180)
 					(length 5.08)
-					(name "PC10(UART4_RX)"
+					(name "PC10(UART4_TX)"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5158,7 +5158,7 @@
 				(pin bidirectional line
 					(at 27.94 -50.8 180)
 					(length 5.08)
-					(name "PC11(UART4_TX)"
+					(name "PC11(UART4_RX)"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -10031,7 +10031,7 @@
 	)
 	(text "BOOT"
 		(exclude_from_sim no)
-		(at 105.41 53.34 0)
+		(at 90.17 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10239,7 +10239,7 @@
 	)
 	(text "RESET"
 		(exclude_from_sim no)
-		(at 74.93 87.63 0)
+		(at 63.5 87.63 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -10338,16 +10338,10 @@
 		(uuid "0ff4e723-ee4f-4e86-864b-d6df8c606c3d")
 	)
 	(junction
-		(at 59.69 96.52)
+		(at 48.26 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "11958947-9cde-4424-bff6-4c67409ea13b")
-	)
-	(junction
-		(at 99.06 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1872d413-e5f8-4cbe-a3c6-2b791ae80b09")
 	)
 	(junction
 		(at 231.14 309.88)
@@ -10392,7 +10386,7 @@
 		(uuid "2b29fbb8-bea9-4094-bece-830cbf7557b1")
 	)
 	(junction
-		(at 67.31 76.2)
+		(at 55.88 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2d258365-740e-4df4-918c-d0de2153cb52")
@@ -10432,12 +10426,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3b0c1cd6-2214-45ee-af81-ce86eed709ab")
-	)
-	(junction
-		(at 97.79 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3d83ced5-1ba4-4841-b774-5dd4f39f311f")
 	)
 	(junction
 		(at 72.39 149.86)
@@ -10482,6 +10470,12 @@
 		(uuid "4c9fcdb3-989b-4b88-9f9f-c869bdc87991")
 	)
 	(junction
+		(at 90.17 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f9cf46a-81ef-4dac-9395-0205be270341")
+	)
+	(junction
 		(at 228.6 151.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -10494,7 +10488,7 @@
 		(uuid "51a11668-f40c-4458-972b-8c9a12840242")
 	)
 	(junction
-		(at 34.29 96.52)
+		(at 22.86 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "53485e1c-b501-490c-ba4f-29a159178511")
@@ -10504,6 +10498,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "58af4713-5b28-4fde-b80c-efa2503f3cb2")
+	)
+	(junction
+		(at 72.39 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "599baf10-e68f-4a25-b093-161a8e9eb2b4")
 	)
 	(junction
 		(at 72.39 152.4)
@@ -10590,19 +10590,25 @@
 		(uuid "931bfcf4-6297-4d89-9c3f-235a0589fb11")
 	)
 	(junction
+		(at 90.17 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93da781c-029f-4ad2-842e-7be4cd97a7fc")
+	)
+	(junction
 		(at 228.6 247.65)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "97383241-60f9-4ba9-a6de-4b9f8ecb1404")
 	)
 	(junction
-		(at 67.31 91.44)
+		(at 55.88 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "976162a8-b4dc-4670-9ec6-c211b2b81a3b")
 	)
 	(junction
-		(at 67.31 72.39)
+		(at 55.88 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9e116d75-e11b-4923-a30e-f4485c106543")
@@ -10626,7 +10632,7 @@
 		(uuid "a785fe41-d848-45c7-b5d8-a1d639332824")
 	)
 	(junction
-		(at 87.63 77.47)
+		(at 72.39 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a79b08fd-5c88-48ac-85e6-c8e8006c9ac3")
@@ -10668,7 +10674,7 @@
 		(uuid "bc0f217d-f6f3-41dd-b43a-23dacd50877c")
 	)
 	(junction
-		(at 35.56 96.52)
+		(at 24.13 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be90af6f-82ca-4042-84b6-0c06f549760e")
@@ -10692,7 +10698,7 @@
 		(uuid "c790a439-958a-4380-94ba-ad75a73562c2")
 	)
 	(junction
-		(at 59.69 72.39)
+		(at 48.26 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cfd3cace-f0c4-46d0-bad8-2b043b3fb884")
@@ -10720,6 +10726,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d20d76b8-71f8-4cf0-a053-594f20693640")
+	)
+	(junction
+		(at 90.17 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3be470d-a7dd-4ee1-be5b-c2a40716c1e8")
+	)
+	(junction
+		(at 90.17 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3cf8093-32fc-43bb-beb9-084ef4ad2a50")
 	)
 	(junction
 		(at 41.91 29.21)
@@ -10750,6 +10768,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d84200b0-8a94-4cc8-b0bd-34496412e05b")
+	)
+	(junction
+		(at 73.66 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "daecf69c-4226-4eb8-be32-dcf5f77f9eb5")
 	)
 	(junction
 		(at 231.14 237.49)
@@ -10811,16 +10835,6 @@
 		(color 0 0 0 0)
 		(uuid "f7e9e592-e782-4202-8ebb-ff8f5000938f")
 	)
-	(junction
-		(at 113.03 62.23)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fd6bb4f9-aba1-4464-a6d4-2bdb96b97ca7")
-	)
-	(no_connect
-		(at 115.57 82.55)
-		(uuid "0dbe959c-b2e5-48b6-8a74-eaafb4c27472")
-	)
 	(no_connect
 		(at 87.63 154.94)
 		(uuid "3f3678ae-e5b3-496e-8c46-497af29cb08d")
@@ -10830,11 +10844,11 @@
 		(uuid "8019a467-1103-4f81-9375-d11f3d0b4d36")
 	)
 	(no_connect
-		(at 48.26 85.09)
+		(at 36.83 85.09)
 		(uuid "bca9b689-a980-4ec3-abe2-9b23fe7bee8a")
 	)
 	(no_connect
-		(at 48.26 82.55)
+		(at 36.83 82.55)
 		(uuid "bdaf02d9-12f0-40cb-be0e-a0129ace1b97")
 	)
 	(no_connect
@@ -10927,7 +10941,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 49.53) (xy 106.68 49.53)
+			(xy 88.9 49.53) (xy 106.68 49.53)
 		)
 		(stroke
 			(width 0)
@@ -10977,7 +10991,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 72.39) (xy 115.57 72.39)
+			(xy 55.88 72.39) (xy 115.57 72.39)
 		)
 		(stroke
 			(width 0)
@@ -11237,7 +11251,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 91.44) (xy 67.31 91.44)
+			(xy 54.61 91.44) (xy 55.88 91.44)
 		)
 		(stroke
 			(width 0)
@@ -11347,7 +11361,7 @@
 	)
 	(wire
 		(pts
-			(xy 97.79 62.23) (xy 97.79 64.77)
+			(xy 72.39 62.23) (xy 72.39 64.77)
 		)
 		(stroke
 			(width 0)
@@ -11587,7 +11601,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 91.44) (xy 68.58 91.44)
+			(xy 55.88 91.44) (xy 57.15 91.44)
 		)
 		(stroke
 			(width 0)
@@ -11737,16 +11751,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 25.4) (xy 99.06 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31e1e418-ad67-4ef5-b66a-7065cd0eee8b")
-	)
-	(wire
-		(pts
 			(xy 77.47 139.7) (xy 72.39 139.7)
 		)
 		(stroke
@@ -11884,6 +11888,16 @@
 			(type default)
 		)
 		(uuid "3af0ad5b-bf73-4293-92f5-8497a3446f36")
+	)
+	(wire
+		(pts
+			(xy 88.9 64.77) (xy 90.17 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e293d23-e7b0-4aad-961a-a9b06c1fb776")
 	)
 	(wire
 		(pts
@@ -12027,6 +12041,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 17.78) (xy 88.9 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4776d046-1918-476e-bce7-fbef07ccefda")
+	)
+	(wire
+		(pts
 			(xy 245.11 247.65) (xy 228.6 247.65)
 		)
 		(stroke
@@ -12167,13 +12191,23 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 20.32) (xy 106.68 20.32)
+			(xy 101.6 20.32) (xy 106.68 20.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "4be60b87-3732-4ccd-9153-af45f5253860")
+	)
+	(wire
+		(pts
+			(xy 72.39 64.77) (xy 72.39 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4bf19a95-0625-4619-a530-b0b289e8f63b")
 	)
 	(wire
 		(pts
@@ -12194,6 +12228,16 @@
 			(type default)
 		)
 		(uuid "4d2586dc-a31b-40e4-8070-e18dd61afe2a")
+	)
+	(wire
+		(pts
+			(xy 90.17 62.23) (xy 90.17 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d7d2e65-602f-4466-847c-5a29f3f3643f")
 	)
 	(wire
 		(pts
@@ -12227,7 +12271,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 72.39) (xy 67.31 76.2)
+			(xy 55.88 72.39) (xy 55.88 76.2)
 		)
 		(stroke
 			(width 0)
@@ -12267,7 +12311,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 82.55) (xy 59.69 72.39)
+			(xy 48.26 82.55) (xy 48.26 72.39)
 		)
 		(stroke
 			(width 0)
@@ -12284,6 +12328,16 @@
 			(type default)
 		)
 		(uuid "54526647-c701-40f0-9a33-9122cf4ead09")
+	)
+	(wire
+		(pts
+			(xy 90.17 82.55) (xy 90.17 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54a62f37-6b95-4094-8cd3-4743aba77977")
 	)
 	(wire
 		(pts
@@ -12387,7 +12441,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 63.5) (xy 35.56 64.77)
+			(xy 24.13 63.5) (xy 24.13 64.77)
 		)
 		(stroke
 			(width 0)
@@ -12497,16 +12551,6 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 62.23) (xy 137.16 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "614c5b3e-6e06-4d72-b0b6-425a35dd5a2a")
-	)
-	(wire
-		(pts
 			(xy 100.33 229.87) (xy 100.33 232.41)
 		)
 		(stroke
@@ -12547,7 +12591,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 76.2) (xy 68.58 76.2)
+			(xy 55.88 76.2) (xy 57.15 76.2)
 		)
 		(stroke
 			(width 0)
@@ -12654,16 +12698,6 @@
 			(type default)
 		)
 		(uuid "6d0bdc6b-4447-41f3-9508-c13d6533b44a")
-	)
-	(wire
-		(pts
-			(xy 113.03 62.23) (xy 113.03 64.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f724fc3-945b-4554-b035-e9c2ebab0bd3")
 	)
 	(wire
 		(pts
@@ -12817,7 +12851,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 77.47) (xy 115.57 77.47)
+			(xy 72.39 77.47) (xy 115.57 77.47)
 		)
 		(stroke
 			(width 0)
@@ -12834,6 +12868,16 @@
 			(type default)
 		)
 		(uuid "758715fa-2405-46ee-851e-056b0b109a31")
+	)
+	(wire
+		(pts
+			(xy 88.9 62.23) (xy 90.17 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76fb9ec4-9e76-4719-8ed1-c5c1ef189555")
 	)
 	(wire
 		(pts
@@ -12904,6 +12948,16 @@
 			(type default)
 		)
 		(uuid "7aab821e-666a-43eb-9eb7-fe1e04671111")
+	)
+	(wire
+		(pts
+			(xy 90.17 92.71) (xy 95.25 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b3d9a99-09c0-4c05-84a8-54796555456a")
 	)
 	(wire
 		(pts
@@ -13077,7 +13131,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 80.01) (xy 49.53 80.01)
+			(xy 36.83 80.01) (xy 38.1 80.01)
 		)
 		(stroke
 			(width 0)
@@ -13267,7 +13321,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 95.25) (xy 35.56 96.52)
+			(xy 24.13 95.25) (xy 24.13 96.52)
 		)
 		(stroke
 			(width 0)
@@ -13294,16 +13348,6 @@
 			(type default)
 		)
 		(uuid "8cda8977-035c-4112-80c7-5234c3fa7a75")
-	)
-	(wire
-		(pts
-			(xy 88.9 22.86) (xy 88.9 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8d9a154d-4496-49a0-9935-c639f642d121")
 	)
 	(wire
 		(pts
@@ -13367,16 +13411,6 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 49.53) (xy 99.06 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "93d0eec3-2bf0-4041-93e0-930059a5dea0")
-	)
-	(wire
-		(pts
 			(xy 144.78 62.23) (xy 147.32 62.23)
 		)
 		(stroke
@@ -13437,7 +13471,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 62.23) (xy 97.79 62.23)
+			(xy 72.39 62.23) (xy 73.66 62.23)
 		)
 		(stroke
 			(width 0)
@@ -13687,7 +13721,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 77.47) (xy 49.53 77.47)
+			(xy 36.83 77.47) (xy 38.1 77.47)
 		)
 		(stroke
 			(width 0)
@@ -13717,16 +13751,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 62.23) (xy 87.63 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a4fa78cd-ba54-4741-89fb-996a309e1dab")
-	)
-	(wire
-		(pts
 			(xy 245.11 261.62) (xy 231.14 261.62)
 		)
 		(stroke
@@ -13747,7 +13771,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 72.39) (xy 67.31 72.39)
+			(xy 48.26 72.39) (xy 55.88 72.39)
 		)
 		(stroke
 			(width 0)
@@ -13777,13 +13801,23 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 92.71) (xy 87.63 92.71)
+			(xy 90.17 90.17) (xy 90.17 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ab41d103-25ab-46c3-b675-d8af78ff2e72")
+		(uuid "ab15c58a-89c4-4b34-9723-e34e4a9d63b8")
+	)
+	(wire
+		(pts
+			(xy 72.39 92.71) (xy 90.17 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abfaa953-59f4-4557-9cbd-7e546d5e0bd5")
 	)
 	(wire
 		(pts
@@ -13857,6 +13891,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 62.23) (xy 137.16 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0220c38-2cb4-47a8-bdc5-36b91927c927")
+	)
+	(wire
+		(pts
 			(xy 114.3 252.73) (xy 110.49 252.73)
 		)
 		(stroke
@@ -13907,7 +13951,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 76.2) (xy 67.31 76.2)
+			(xy 54.61 76.2) (xy 55.88 76.2)
 		)
 		(stroke
 			(width 0)
@@ -13957,7 +14001,7 @@
 	)
 	(wire
 		(pts
-			(xy 67.31 96.52) (xy 67.31 91.44)
+			(xy 55.88 96.52) (xy 55.88 91.44)
 		)
 		(stroke
 			(width 0)
@@ -14187,7 +14231,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 96.52) (xy 35.56 96.52)
+			(xy 22.86 96.52) (xy 24.13 96.52)
 		)
 		(stroke
 			(width 0)
@@ -14357,6 +14401,16 @@
 	)
 	(wire
 		(pts
+			(xy 91.44 17.78) (xy 88.9 17.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca0ec522-dc81-4b7c-8381-6841b9ddf8b4")
+	)
+	(wire
+		(pts
 			(xy 114.3 176.53) (xy 115.57 176.53)
 		)
 		(stroke
@@ -14367,7 +14421,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 96.52) (xy 67.31 96.52)
+			(xy 48.26 96.52) (xy 55.88 96.52)
 		)
 		(stroke
 			(width 0)
@@ -14477,7 +14531,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 95.25) (xy 33.02 96.52)
+			(xy 21.59 95.25) (xy 21.59 96.52)
 		)
 		(stroke
 			(width 0)
@@ -14647,7 +14701,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 92.71) (xy 87.63 85.09)
+			(xy 72.39 92.71) (xy 72.39 85.09)
 		)
 		(stroke
 			(width 0)
@@ -14657,7 +14711,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 72.39) (xy 59.69 72.39)
+			(xy 36.83 72.39) (xy 48.26 72.39)
 		)
 		(stroke
 			(width 0)
@@ -14667,7 +14721,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 96.52) (xy 34.29 96.52)
+			(xy 21.59 96.52) (xy 22.86 96.52)
 		)
 		(stroke
 			(width 0)
@@ -14707,7 +14761,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 96.52) (xy 59.69 96.52)
+			(xy 24.13 96.52) (xy 48.26 96.52)
 		)
 		(stroke
 			(width 0)
@@ -14757,6 +14811,16 @@
 	)
 	(wire
 		(pts
+			(xy 73.66 64.77) (xy 72.39 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e04c7917-47a7-44b4-b6a8-53a23b9ba948")
+	)
+	(wire
+		(pts
 			(xy 242.57 215.9) (xy 245.11 215.9)
 		)
 		(stroke
@@ -14764,6 +14828,16 @@
 			(type default)
 		)
 		(uuid "e06a674e-b5e3-4528-a766-6c288be81741")
+	)
+	(wire
+		(pts
+			(xy 90.17 64.77) (xy 90.17 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0e283a5-3190-4840-8695-cd2fcf428b46")
 	)
 	(wire
 		(pts
@@ -15147,13 +15221,23 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 96.52) (xy 59.69 87.63)
+			(xy 48.26 96.52) (xy 48.26 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f21725b4-9e3e-4790-8d28-1e0cbde167fc")
+	)
+	(wire
+		(pts
+			(xy 90.17 82.55) (xy 115.57 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2cbd846-ee8d-4600-b2bd-6b6419426ffb")
 	)
 	(wire
 		(pts
@@ -15184,6 +15268,16 @@
 			(type default)
 		)
 		(uuid "f39cc3c7-03e5-4125-b982-83c1dfe99e4f")
+	)
+	(wire
+		(pts
+			(xy 73.66 62.23) (xy 76.2 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3f2a74d-684f-4364-8d5c-a30ff6c3f577")
 	)
 	(wire
 		(pts
@@ -15534,6 +15628,16 @@
 			(justify right bottom)
 		)
 		(uuid "151298eb-683f-4797-a8a9-4a16d3dcf91e")
+	)
+	(label "4_B"
+		(at 175.26 186.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1586fa3f-9bca-482b-aad3-70b512088cd7")
 	)
 	(label "3_B"
 		(at 175.26 143.51 0)
@@ -15904,16 +16008,6 @@
 			(justify right bottom)
 		)
 		(uuid "4ca2e261-fb02-4237-b105-726bf02f3a7d")
-	)
-	(label "4_B"
-		(at 175.26 184.15 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4f8b07ad-20df-45ba-b75d-f5bab23a396f")
 	)
 	(label "8_B"
 		(at 175.26 138.43 0)
@@ -16346,7 +16440,7 @@
 		(uuid "74d62e14-512b-4af6-99c7-ea6990f12c1a")
 	)
 	(label "SWDIO"
-		(at 49.53 80.01 0)
+		(at 38.1 80.01 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16466,7 +16560,7 @@
 		(uuid "7fa22d95-1578-4828-a9bd-ab37fccafab1")
 	)
 	(label "SWCLK"
-		(at 49.53 77.47 0)
+		(at 38.1 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -16855,16 +16949,6 @@
 		)
 		(uuid "abbb6ba3-16dc-4706-9359-acc56c5f85a9")
 	)
-	(label "4_A"
-		(at 175.26 186.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ad4caa09-45ee-495e-b961-f6edfa72ce58")
-	)
 	(label "11_COM_B"
 		(at 142.24 247.65 180)
 		(effects
@@ -16916,7 +17000,7 @@
 		(uuid "b16545ef-c8c7-4f91-8ebf-68196394101f")
 	)
 	(label "RST"
-		(at 80.01 72.39 0)
+		(at 62.23 72.39 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17035,6 +17119,16 @@
 		)
 		(uuid "c118dfdd-8d1a-4ad3-9145-8520acfc3d43")
 	)
+	(label "4_A"
+		(at 175.26 184.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c317ddea-bb8d-4824-8a43-3f3b82e569e1")
+	)
 	(label "1_COM_B"
 		(at 175.26 171.45 0)
 		(effects
@@ -17106,7 +17200,7 @@
 		(uuid "c7647df6-c718-4131-bac4-54c8a3790691")
 	)
 	(label "BOOT"
-		(at 106.68 77.47 0)
+		(at 104.14 77.47 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -17868,7 +17962,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+		(property "Description" "RJ45 socket"
 			(at 256.54 217.17 0)
 			(effects
 				(font
@@ -18232,7 +18326,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Threaded_Standoff"
+		(property "Value" "9774130360R"
 			(at 128.27 396.1821 0)
 			(effects
 				(font
@@ -18250,7 +18344,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/keystone-electronics/24882/9921822?s=N4IgTCBcDaIMwDYC0YAsAOdYkEYQF0BfIA"
+		(property "Datasheet" "https://www.digikey.com/short/wz993m9t"
 			(at 125.73 394.97 0)
 			(effects
 				(font
@@ -18259,7 +18353,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "13mm Threaded Standoff"
 			(at 125.73 394.97 0)
 			(effects
 				(font
@@ -18278,7 +18372,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "h7_breakout"
 				(path "/7d12653b-8acc-4705-a19c-4935126d3016"
 					(reference "H2")
 					(unit 1)
@@ -18832,7 +18926,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "D1213A-04TS-7"
 			(at 67.8881 303.0798 0)
 			(effects
 				(font
@@ -18850,7 +18944,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/D1213A-04TS-7/3340451"
+		(property "Datasheet" "https://www.digikey.com/short/z92r7059"
 			(at 64.77 314.96 0)
 			(effects
 				(font
@@ -18932,7 +19026,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "D1213A-04TS-7"
 			(at 174.5681 303.0798 0)
 			(effects
 				(font
@@ -18950,7 +19044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/D1213A-04TS-7/3340451"
+		(property "Datasheet" "https://www.digikey.com/short/z92r7059"
 			(at 171.45 314.96 0)
 			(effects
 				(font
@@ -19192,7 +19286,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+		(property "Description" "RJ45 socket"
 			(at 256.54 241.3 0)
 			(effects
 				(font
@@ -19707,7 +19801,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_Coaxial"
+		(property "Value" "RFPC-SMA27-F"
 			(at 24.13 179.07 0)
 			(effects
 				(font
@@ -19725,7 +19819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/short/8b0hpt3p"
 			(at 29.21 184.15 0)
 			(effects
 				(font
@@ -19750,7 +19844,7 @@
 			(uuid "31e42b41-7761-483b-b4d7-bd7f0e503e4a")
 		)
 		(instances
-			(project ""
+			(project "h7_breakout"
 				(path "/7d12653b-8acc-4705-a19c-4935126d3016"
 					(reference "J9")
 					(unit 1)
@@ -19805,7 +19899,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+		(property "Description" "RJ45 socket"
 			(at 256.54 289.56 0)
 			(effects
 				(font
@@ -19867,7 +19961,7 @@
 	)
 	(symbol
 		(lib_id "asl_symbols_new:TL3300")
-		(at 67.31 83.82 90)
+		(at 55.88 83.82 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -19876,7 +19970,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d4233c5-a667-4df5-a64f-a6a521296c01")
 		(property "Reference" "S2"
-			(at 71.755 82.6078 90)
+			(at 60.325 82.6078 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19884,8 +19978,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "TS02-66"
-			(at 71.755 85.0321 90)
+		(property "Value" "TS02-66-170-BK-260-LCR-D"
+			(at 60.325 85.0321 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19894,7 +19988,7 @@
 			)
 		)
 		(property "Footprint" "asl_footprints:SW_TH_Tactile_TS02-66"
-			(at 69.85 87.63 0)
+			(at 58.42 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19903,7 +19997,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.com/short/5zrnb72h"
-			(at 69.85 87.63 0)
+			(at 58.42 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19912,7 +20006,7 @@
 			)
 		)
 		(property "Description" "12mm SPST-NO tactile switch smd"
-			(at 67.31 83.82 0)
+			(at 55.88 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19921,7 +20015,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 67.31 83.82 90)
+			(at 55.88 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19930,7 +20024,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 67.31 83.82 90)
+			(at 55.88 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20004,7 +20098,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DC DC Converter 1 Output 5V 1A 8V - 28V Input"
+		(property "Description" "DC DC Converter"
 			(at 129.54 20.32 0)
 			(effects
 				(font
@@ -20226,7 +20320,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "8 resistor network, parallel topology"
+		(property "Description" "8 resistor network"
 			(at 82.55 149.86 0)
 			(effects
 				(font
@@ -20329,7 +20423,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Threaded_Standoff"
+		(property "Value" "9774130360R"
 			(at 104.14 401.2621 0)
 			(effects
 				(font
@@ -20347,7 +20441,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/keystone-electronics/24882/9921822?s=N4IgTCBcDaIMwDYC0YAsAOdYkEYQF0BfIA"
+		(property "Datasheet" "https://www.digikey.com/short/wz993m9t"
 			(at 101.6 400.05 0)
 			(effects
 				(font
@@ -20356,7 +20450,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "13mm Threaded Standoff"
 			(at 101.6 400.05 0)
 			(effects
 				(font
@@ -20375,7 +20469,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "h7_breakout"
 				(path "/7d12653b-8acc-4705-a19c-4935126d3016"
 					(reference "H3")
 					(unit 1)
@@ -20516,6 +20610,94 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
+		(at 90.17 87.63 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "40978059-9006-4c51-be86-b37b993a3478")
+		(property "Reference" "C13"
+			(at 87.8459 86.4241 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100 nF"
+			(at 87.8459 88.8484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 90.17 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 90.17 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S3.3" ""
+			(at 90.17 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "KLC_S4.1" ""
+			(at 90.17 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ee435eb3-5052-4fa1-8dc9-ce07e14930a9")
+		)
+		(pin "1"
+			(uuid "2bc67eb6-3590-4423-a203-77d9763b8b0a")
+		)
+		(instances
+			(project "h7_breakout"
+				(path "/7d12653b-8acc-4705-a19c-4935126d3016"
+					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
 		(at 100.33 186.69 0)
 		(mirror y)
 		(unit 1)
@@ -20621,7 +20803,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Threaded_Standoff"
+		(property "Value" "9774130360R"
 			(at 104.14 396.1821 0)
 			(effects
 				(font
@@ -20639,7 +20821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/keystone-electronics/24882/9921822?s=N4IgTCBcDaIMwDYC0YAsAOdYkEYQF0BfIA"
+		(property "Datasheet" "https://www.digikey.com/short/wz993m9t"
 			(at 101.6 394.97 0)
 			(effects
 				(font
@@ -20648,7 +20830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "13mm Threaded Standoff"
 			(at 101.6 394.97 0)
 			(effects
 				(font
@@ -20667,7 +20849,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "h7_breakout"
 				(path "/7d12653b-8acc-4705-a19c-4935126d3016"
 					(reference "H1")
 					(unit 1)
@@ -20710,7 +20892,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.advanced-monolithic.com/pdf/ds1117.pdf"
+		(property "Datasheet" "https://www.digikey.com/short/22980jpq"
 			(at 160.02 26.67 0)
 			(effects
 				(font
@@ -20719,7 +20901,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+		(property "Description" "LDO regulator"
 			(at 157.48 20.32 0)
 			(effects
 				(font
@@ -20783,7 +20965,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "12_LED"
+		(property "Value" "151031VS06000"
 			(at 109.601 45.9796 90)
 			(effects
 				(font
@@ -20801,7 +20983,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/short/vb0zvrd4"
 			(at 106.68 43.18 0)
 			(effects
 				(font
@@ -20810,7 +20992,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "3mm Green LED"
 			(at 106.68 43.18 0)
 			(effects
 				(font
@@ -20907,7 +21089,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+		(property "Description" "RJ45 socket"
 			(at 256.54 144.78 0)
 			(effects
 				(font
@@ -21013,7 +21195,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "STMicroelectronics Arm Cortex-M7 MCU, 2048KB flash, 1024KB RAM, 480 MHz, 1.71-3.6V, 82 GPIO, LQFP100"
+		(property "Description" "Microcontroller"
 			(at 160.02 135.89 0)
 			(effects
 				(font
@@ -21500,7 +21682,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "D1213A-04TS-7"
 			(at 208.8581 303.0798 0)
 			(effects
 				(font
@@ -21518,7 +21700,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/D1213A-04TS-7/3340451"
+		(property "Datasheet" "https://www.digikey.com/short/z92r7059"
 			(at 205.74 314.96 0)
 			(effects
 				(font
@@ -21933,7 +22115,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10 kΩ"
+		(property "Value" "10 KΩ"
 			(at 108.331 26.6121 0)
 			(effects
 				(font
@@ -21960,7 +22142,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "Resistor"
 			(at 106.68 25.4 0)
 			(effects
 				(font
@@ -22115,7 +22297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+		(property "Description" "RJ45 socket"
 			(at 256.54 168.91 0)
 			(effects
 				(font
@@ -22260,7 +22442,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "D1213A-04TS-7"
 			(at 102.1781 343.7198 0)
 			(effects
 				(font
@@ -22278,7 +22460,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/D1213A-04TS-7/3340451"
+		(property "Datasheet" "https://www.digikey.com/short/z92r7059"
 			(at 99.06 355.6 0)
 			(effects
 				(font
@@ -22475,7 +22657,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 87.63 81.28 0)
+		(at 72.39 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22484,7 +22666,7 @@
 		(fields_autoplaced yes)
 		(uuid "68ce1d6b-8d0d-43ef-9662-36cfcd453ef3")
 		(property "Reference" "R3"
-			(at 89.281 80.0678 0)
+			(at 74.041 80.0678 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22492,8 +22674,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10 kΩ"
-			(at 89.281 82.4921 0)
+		(property "Value" "10 KΩ"
+			(at 74.041 82.4921 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22502,7 +22684,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 88.646 81.534 90)
+			(at 73.406 81.534 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22511,7 +22693,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 87.63 81.28 0)
+			(at 72.39 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22519,8 +22701,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 87.63 81.28 0)
+		(property "Description" "Resistor"
+			(at 72.39 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22529,7 +22711,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 87.63 81.28 0)
+			(at 72.39 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22538,7 +22720,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 87.63 81.28 0)
+			(at 72.39 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22934,7 +23116,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "D1213A-04TS-7"
 			(at 33.5981 303.0798 0)
 			(effects
 				(font
@@ -22952,7 +23134,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/D1213A-04TS-7/3340451"
+		(property "Datasheet" "https://www.digikey.com/short/z92r7059"
 			(at 30.48 314.96 0)
 			(effects
 				(font
@@ -23063,7 +23245,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Very low capacitance ESD protection diode, 2 data-line, SOT-23-6"
+		(property "Description" "ESD protection"
 			(at 41.91 34.29 0)
 			(effects
 				(font
@@ -23250,7 +23432,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+		(property "Description" "RJ45 socket"
 			(at 256.54 361.95 0)
 			(effects
 				(font
@@ -23431,7 +23613,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/short/dc54tmvm"
 			(at 35.56 393.7 0)
 			(effects
 				(font
@@ -23502,7 +23684,7 @@
 				)
 			)
 		)
-		(property "Value" "91 Ω"
+		(property "Value" "10 KΩ"
 			(at 96.52 102.8008 90)
 			(effects
 				(font
@@ -23528,7 +23710,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "Resistor"
 			(at 96.52 105.41 0)
 			(effects
 				(font
@@ -23654,7 +23836,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "D1213A-04TS-7"
 			(at 137.7381 343.7198 0)
 			(effects
 				(font
@@ -23672,7 +23854,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/D1213A-04TS-7/3340451"
+		(property "Datasheet" "https://www.digikey.com/short/z92r7059"
 			(at 134.62 355.6 0)
 			(effects
 				(font
@@ -24059,7 +24241,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "D1213A-04TS-7"
 			(at 137.7381 303.0798 0)
 			(effects
 				(font
@@ -24077,7 +24259,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/D1213A-04TS-7/3340451"
+		(property "Datasheet" "https://www.digikey.com/short/z92r7059"
 			(at 134.62 314.96 0)
 			(effects
 				(font
@@ -24375,7 +24557,7 @@
 				)
 			)
 		)
-		(property "Value" "6.8Ω"
+		(property "Value" "10 KΩ"
 			(at 182.88 179.0008 90)
 			(effects
 				(font
@@ -24401,7 +24583,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "Resistor"
 			(at 182.88 181.61 0)
 			(effects
 				(font
@@ -24445,7 +24627,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 34.29 96.52 0)
+		(at 22.86 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24454,7 +24636,7 @@
 		(fields_autoplaced yes)
 		(uuid "98773e1c-587a-4db6-b3eb-ff4565bfd908")
 		(property "Reference" "#PWR015"
-			(at 34.29 102.87 0)
+			(at 22.86 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24463,7 +24645,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 34.29 100.6531 0)
+			(at 22.86 100.6531 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24471,7 +24653,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 34.29 96.52 0)
+			(at 22.86 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24480,7 +24662,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 96.52 0)
+			(at 22.86 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24489,7 +24671,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 34.29 96.52 0)
+			(at 22.86 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24527,7 +24709,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_Coaxial"
+		(property "Value" "RFPC-SMA27-F"
 			(at 57.15 179.07 0)
 			(effects
 				(font
@@ -24545,7 +24727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/short/8b0hpt3p"
 			(at 62.23 184.15 0)
 			(effects
 				(font
@@ -24774,7 +24956,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "D1213A-04TS-7"
 			(at 210.1281 343.7198 0)
 			(effects
 				(font
@@ -24792,7 +24974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/D1213A-04TS-7/3340451"
+		(property "Datasheet" "https://www.digikey.com/short/z92r7059"
 			(at 207.01 355.6 0)
 			(effects
 				(font
@@ -24902,7 +25084,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+		(property "Description" "RJ45 socket"
 			(at 256.54 96.52 0)
 			(effects
 				(font
@@ -25009,7 +25191,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+		(property "Description" "RJ45 socket"
 			(at 256.54 313.69 0)
 			(effects
 				(font
@@ -25137,7 +25319,7 @@
 	)
 	(symbol
 		(lib_id "asl_symbols_new:TL3300")
-		(at 105.41 63.5 0)
+		(at 81.28 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25146,15 +25328,15 @@
 		(fields_autoplaced yes)
 		(uuid "a7c36b7f-2ddc-4115-8773-66ec2c5137f2")
 		(property "Reference" "S1"
-			(at 105.41 55.6725 0)
+			(at 81.28 55.6725 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "TS02-66"
-			(at 105.41 58.0968 0)
+		(property "Value" "TS02-66-170-BK-260-LCR-D"
+			(at 81.28 58.0968 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25162,7 +25344,7 @@
 			)
 		)
 		(property "Footprint" "asl_footprints:SW_TH_Tactile_TS02-66"
-			(at 101.6 66.04 0)
+			(at 77.47 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25171,7 +25353,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.com/short/5zrnb72h"
-			(at 101.6 66.04 0)
+			(at 77.47 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25180,7 +25362,7 @@
 			)
 		)
 		(property "Description" "12mm SPST-NO tactile switch smd"
-			(at 105.41 63.5 0)
+			(at 81.28 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25189,7 +25371,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 105.41 63.5 0)
+			(at 81.28 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25198,7 +25380,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 105.41 63.5 0)
+			(at 81.28 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25246,7 +25428,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10 kΩ"
+		(property "Value" "10 KΩ"
 			(at 108.331 35.5021 0)
 			(effects
 				(font
@@ -25273,7 +25455,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "Resistor"
 			(at 106.68 34.29 0)
 			(effects
 				(font
@@ -25358,7 +25540,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "DC Barrel Jack 2pin THP"
+		(property "Description" "DC Barrel Jack"
 			(at 81.28 38.1 0)
 			(effects
 				(font
@@ -25419,7 +25601,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "D1213A-04TS-7"
 			(at 32.3281 343.7198 0)
 			(effects
 				(font
@@ -25437,7 +25619,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/D1213A-04TS-7/3340451"
+		(property "Datasheet" "https://www.digikey.com/short/z92r7059"
 			(at 29.21 355.6 0)
 			(effects
 				(font
@@ -25568,7 +25750,7 @@
 	)
 	(symbol
 		(lib_id "asl_symbols_new:SWD_connector")
-		(at 35.56 80.01 0)
+		(at 24.13 80.01 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25576,7 +25758,7 @@
 		(dnp no)
 		(uuid "b67ca95a-18f0-4a86-9f9b-58f80cc55561")
 		(property "Reference" "J3"
-			(at 45.72 66.04 0)
+			(at 34.29 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25585,7 +25767,7 @@
 			)
 		)
 		(property "Value" "SWD_connector"
-			(at 52.07 93.98 0)
+			(at 40.64 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25594,7 +25776,7 @@
 			)
 		)
 		(property "Footprint" "asl_footprints:SWD_2x5_socket"
-			(at 35.56 80.01 0)
+			(at 24.13 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25603,7 +25785,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.com/short/5vzzrqjw"
-			(at 26.67 111.76 90)
+			(at 15.24 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25612,7 +25794,7 @@
 			)
 		)
 		(property "Description" "Cortex Debug Connector, standard ARM Cortex-M SWD and JTAG interface"
-			(at 35.56 80.01 0)
+			(at 24.13 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25621,7 +25803,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 35.56 80.01 0)
+			(at 24.13 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25630,7 +25812,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 35.56 80.01 0)
+			(at 24.13 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25679,7 +25861,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 35.56 63.5 0)
+		(at 24.13 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25688,7 +25870,7 @@
 		(fields_autoplaced yes)
 		(uuid "bbc96168-a4d4-4eaa-8ad1-e21d3a5f7527")
 		(property "Reference" "#PWR09"
-			(at 35.56 67.31 0)
+			(at 24.13 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25697,7 +25879,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 35.56 59.3669 0)
+			(at 24.13 59.3669 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25705,7 +25887,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 35.56 63.5 0)
+			(at 24.13 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25714,7 +25896,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 35.56 63.5 0)
+			(at 24.13 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25723,7 +25905,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 35.56 63.5 0)
+			(at 24.13 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25940,7 +26122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+		(property "Description" "RJ45 socket"
 			(at 256.54 265.43 0)
 			(effects
 				(font
@@ -26018,7 +26200,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_Coaxial"
+		(property "Value" "RFPC-SMA27-F"
 			(at 40.64 179.07 0)
 			(effects
 				(font
@@ -26036,7 +26218,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/short/8b0hpt3p"
 			(at 45.72 184.15 0)
 			(effects
 				(font
@@ -26087,7 +26269,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_Coaxial"
+		(property "Value" "RFPC-SMA27-F"
 			(at 73.66 179.07 0)
 			(effects
 				(font
@@ -26105,7 +26287,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/short/8b0hpt3p"
 			(at 78.74 184.15 0)
 			(effects
 				(font
@@ -26140,7 +26322,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 59.69 85.09 0)
+		(at 48.26 85.09 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -26149,7 +26331,7 @@
 		(dnp no)
 		(uuid "c25457e1-9c90-4f05-9e9d-a15dd8bd3324")
 		(property "Reference" "C6"
-			(at 57.3659 83.8841 0)
+			(at 45.9359 83.8841 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26158,7 +26340,7 @@
 			)
 		)
 		(property "Value" "100 nF"
-			(at 57.3659 86.3084 0)
+			(at 45.9359 86.3084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26167,7 +26349,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 59.69 85.09 0)
+			(at 48.26 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26176,7 +26358,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 59.69 85.09 0)
+			(at 48.26 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26185,7 +26367,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 59.69 85.09 0)
+			(at 48.26 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26194,7 +26376,7 @@
 			)
 		)
 		(property "KLC_S3.3" ""
-			(at 59.69 85.09 0)
+			(at 48.26 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26203,7 +26385,7 @@
 			)
 		)
 		(property "KLC_S4.1" ""
-			(at 59.69 85.09 0)
+			(at 48.26 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26228,24 +26410,23 @@
 	)
 	(symbol
 		(lib_id "Switch:SW_DPDT_x2")
-		(at 93.98 22.86 0)
+		(at 96.52 20.32 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c30e1ba3-5aa2-4401-832c-ec8ee75aaf3f")
 		(property "Reference" "SW1"
-			(at 93.98 14.9055 0)
+			(at 96.52 28.2745 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SW_DPDT_x2"
-			(at 93.98 17.3298 0)
+		(property "Value" "1825263-1"
+			(at 96.52 25.8502 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26253,7 +26434,7 @@
 			)
 		)
 		(property "Footprint" "asl_footprints:switch_slide_DPDT"
-			(at 93.98 22.86 0)
+			(at 96.52 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26262,7 +26443,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.com/short/ht4t7j10"
-			(at 93.98 22.86 0)
+			(at 96.52 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26271,7 +26452,7 @@
 			)
 		)
 		(property "Description" "Switch, dual pole double throw, separate symbols"
-			(at 93.98 22.86 0)
+			(at 96.52 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26298,7 +26479,7 @@
 			(uuid "fb94035e-2d75-4287-9927-d94781083c31")
 		)
 		(instances
-			(project ""
+			(project "h7_breakout"
 				(path "/7d12653b-8acc-4705-a19c-4935126d3016"
 					(reference "SW1")
 					(unit 1)
@@ -26324,7 +26505,7 @@
 				)
 			)
 		)
-		(property "Value" "91 Ω"
+		(property "Value" "10 KΩ"
 			(at 101.6 120.5808 90)
 			(effects
 				(font
@@ -26350,7 +26531,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "Resistor"
 			(at 101.6 123.19 0)
 			(effects
 				(font
@@ -26477,7 +26658,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "D1213A-04TS-7"
 			(at 174.5681 343.7198 0)
 			(effects
 				(font
@@ -26495,7 +26676,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/D1213A-04TS-7/3340451"
+		(property "Datasheet" "https://www.digikey.com/short/z92r7059"
 			(at 171.45 355.6 0)
 			(effects
 				(font
@@ -26577,7 +26758,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "D1213A-04TS-7"
 			(at 66.6181 343.7198 0)
 			(effects
 				(font
@@ -26595,7 +26776,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/D1213A-04TS-7/3340451"
+		(property "Datasheet" "https://www.digikey.com/short/z92r7059"
 			(at 63.5 355.6 0)
 			(effects
 				(font
@@ -26677,7 +26858,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "W25Q25PWSSIQ"
+		(property "Value" "W25Q256JVEIQ"
 			(at 30.48 135.89 0)
 			(effects
 				(font
@@ -26704,7 +26885,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "256Mbit / 32MiB Serial Flash Memory, Quad SPI, 2.7-3.6V, SOIC-8"
+		(property "Description" "Quad SPI Flash Memory"
 			(at 33.02 119.38 0)
 			(effects
 				(font
@@ -26820,7 +27001,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "h7_breakout"
 				(path "/7d12653b-8acc-4705-a19c-4935126d3016"
 					(reference "FID1")
 					(unit 1)
@@ -26847,7 +27028,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Threaded_Standoff"
+		(property "Value" "9774130360R"
 			(at 128.27 401.2621 0)
 			(effects
 				(font
@@ -26865,7 +27046,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/keystone-electronics/24882/9921822?s=N4IgTCBcDaIMwDYC0YAsAOdYkEYQF0BfIA"
+		(property "Datasheet" "https://www.digikey.com/short/wz993m9t"
 			(at 125.73 400.05 0)
 			(effects
 				(font
@@ -26874,7 +27055,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Mounting Hole without connection"
+		(property "Description" "13mm Threaded Standoff"
 			(at 125.73 400.05 0)
 			(effects
 				(font
@@ -26893,7 +27074,7 @@
 			)
 		)
 		(instances
-			(project ""
+			(project "h7_breakout"
 				(path "/7d12653b-8acc-4705-a19c-4935126d3016"
 					(reference "H4")
 					(unit 1)
@@ -27052,7 +27233,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10 kΩ"
+		(property "Value" "10 KΩ"
 			(at 184.531 196.7921 0)
 			(effects
 				(font
@@ -27079,7 +27260,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Description" "Resistor"
 			(at 182.88 195.58 0)
 			(effects
 				(font
@@ -27494,7 +27675,7 @@
 				)
 			)
 		)
-		(property "Value" "TS02-66"
+		(property "Value" "TS02-66-170-BK-260-LCR-D"
 			(at 200.66 185.0968 0)
 			(effects
 				(font
@@ -27680,7 +27861,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "256Mbit / 32MiB Serial Flash Memory, Quad SPI, 2.7-3.6V, SOIC-8"
+		(property "Description" "Quad SPI Flash Memory"
 			(at 62.23 119.38 0)
 			(effects
 				(font
@@ -27786,7 +27967,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+		(property "Description" "RJ45 socket"
 			(at 256.54 337.82 0)
 			(effects
 				(font
@@ -27881,7 +28062,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.com/short/dc54tmvm"
 			(at 68.58 393.7 0)
 			(effects
 				(font
@@ -28076,7 +28257,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+		(property "Description" "RJ45 socket"
 			(at 256.54 120.65 0)
 			(effects
 				(font
@@ -28381,7 +28562,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RJ connector, 8P8C (8 positions 8 connected)"
+		(property "Description" "RJ45 socket"
 			(at 256.54 193.04 0)
 			(effects
 				(font
@@ -28460,7 +28641,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SRV05-4"
+		(property "Value" "D1213A-04TS-7"
 			(at 102.1781 303.0798 0)
 			(effects
 				(font
@@ -28478,7 +28659,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.com/en/products/detail/diodes-incorporated/D1213A-04TS-7/3340451"
+		(property "Datasheet" "https://www.digikey.com/short/z92r7059"
 			(at 99.06 314.96 0)
 			(effects
 				(font
@@ -28691,7 +28872,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "RGB_LED"
+		(property "Value" "WP154A4SEJ3VBDZGW/CA"
 			(at 252.73 26.2198 0)
 			(effects
 				(font
@@ -28717,7 +28898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB 5mm LED"
+		(property "Description" "5mm RGB LED"
 			(at 252.73 36.83 0)
 			(effects
 				(font
@@ -28739,7 +28920,7 @@
 			(uuid "b2565389-5144-45d1-a115-b2e2c35bff24")
 		)
 		(instances
-			(project ""
+			(project "h7_breakout"
 				(path "/7d12653b-8acc-4705-a19c-4935126d3016"
 					(reference "D1")
 					(unit 1)
