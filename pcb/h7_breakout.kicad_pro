@@ -245,7 +245,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "0.4"
+      "sch_revision": "0.5"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -531,7 +531,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "h7_breakout_0_4",
+      "plot": "h7_breakout_0_5",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "h7_breakout.step",
@@ -544,7 +544,7 @@
     "annotate_start_num": 0,
     "annotation": {
       "method": 0,
-      "sort_order": 0
+      "sort_order": 1
     },
     "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
@@ -714,7 +714,7 @@
         "uuid": "7d12653b-8acc-4705-a19c-4935126d3016"
       }
     ],
-    "used_designators": "J18",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
