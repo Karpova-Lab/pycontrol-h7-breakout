@@ -261,7 +261,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "0.7"
+      "sch_revision": "0.8"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -547,7 +547,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "h7_breakout_0_7",
+      "plot": "h7_breakout_0_8",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "h7_breakout.step",
@@ -672,6 +672,12 @@
           "label": "KLC_S4.1",
           "name": "KLC_S4.1",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC",
+          "name": "LCSC",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -730,7 +736,7 @@
         "uuid": "7d12653b-8acc-4705-a19c-4935126d3016"
       }
     ],
-    "used_designators": "S1-6,Y1-2,#PWR1-65,D1-6,RN1,H1-2,R1-18,FID1-3,J1-18,DRA1-2,SW1,C1-13,U1-22,TP1-2",
+    "used_designators": "FID1-3,DRA1-2,SW1-3,C1-13,U1-21,TP1,Y1-2,#PWR1-62,D1-6,JP1-6,R1-60,H1-4,S1-5,J1-16",
     "variants": []
   },
   "sheets": [
