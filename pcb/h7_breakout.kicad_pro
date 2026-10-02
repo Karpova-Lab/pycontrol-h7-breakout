@@ -261,7 +261,7 @@
       "internal_id": "",
       "mfg": "",
       "mpn": "",
-      "sch_revision": "0.8"
+      "sch_revision": "0.9"
     },
     "layer_pairs": [],
     "layer_presets": [],
@@ -547,7 +547,7 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "h7_breakout_0_8",
+      "plot": "h7_breakout_0_9",
       "pos_files": "",
       "specctra_dsn": "",
       "step": "h7_breakout.step",
@@ -736,7 +736,7 @@
         "uuid": "7d12653b-8acc-4705-a19c-4935126d3016"
       }
     ],
-    "used_designators": "FID1-3,DRA1-2,SW1-3,C1-13,U1-21,TP1,Y1-2,#PWR1-62,D1-6,JP1-6,R1-60,H1-4,S1-5,J1-16",
+    "used_designators": "TP1,FID1-3,S1-5,JP1-4,R1-55,H1-4,J1-16,SW1-3,C1-13,U1-21,Y1-2,#PWR1-60,D1-6,DRA1-2",
     "variants": []
   },
   "sheets": [
